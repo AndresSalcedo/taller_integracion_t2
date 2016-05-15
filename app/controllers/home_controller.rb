@@ -13,7 +13,7 @@ class HomeController < ApplicationController
     {
       metadata: { total: get_total(tag, access_token)},
       posts: get_posts(tag, access_token),
-      version: '1.0.4'
+      version: '1.1.0'
     }
   end
 
