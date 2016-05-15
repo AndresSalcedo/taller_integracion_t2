@@ -1,3 +1,7 @@
 language: ruby
 rvm:
  - 2.2.3
+deploy:
+  provider: heroku
+  api_key: 81327cc9-2549-4cc8-a53e-ad3a928e1fca
+  app: asalcedo-taller-integracion-t2
