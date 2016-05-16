@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
 
+  def index
+  end
+
   def buscar
     tag = params[:tag]
     access_token = params[:access_token]
@@ -13,7 +16,7 @@ class HomeController < ApplicationController
     {
       metadata: { total: get_total(tag, access_token)},
       posts: get_posts(tag, access_token),
-      version: '1.1.0'
+      version: '1.2.0'
     }
   end
 
